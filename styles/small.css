@@ -140,13 +140,13 @@ main {
 	margin-bottom: 10px;
 }
 
-ul {
+/*ul {
 	padding-left: 20px; 
 }
 
 li {
 	list-style: disc inside; 
-}
+}*/
 
 figure {
 	display: flex;
