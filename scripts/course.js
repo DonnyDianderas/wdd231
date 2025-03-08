@@ -46,7 +46,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -78,22 +78,36 @@ const courses = [
     }
 ]
 
-const courseList = document.getElementById("course-list");
-    courses.forEach(course => {
-        let li = document.createElement("li");
-        li.textContent = `${course.code} - ${course.name}`;
-        courseList.appendChild(li);
+function renderCourses(filteredCourses) {
+    const courseList = document.getElementById('courseList');
+    courseList.innerHTML = ''; 
+    
+    filteredCourses.forEach(course => {
+      const card = document.createElement('div');
+      card.classList.add('course-card');
+      if (course.completed) {
+        card.classList.add('completed');
+      }
+      
+      
+      card.textContent = `${course.subject} ${course.number}`;
+      courseList.appendChild(card);
     });
-
-    window.filterCourses = function(category) {
-        const courseContainer = document.getElementById("course-container");
-        courseContainer.innerHTML = "";
-        
-        let filteredCourses = category === "all" ? courses : courses.filter(course => course.category === category);
-        
-        filteredCourses.forEach(course => {
-            let div = document.createElement("div");
-            div.textContent = `${course.code} - ${course.name}`;
-            courseContainer.appendChild(div);
-        });
-    };
+    
+  
+    const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
+    document.getElementById('totalCredits').textContent = `Total Credits: ${totalCredits}`;
+  }
+  
+  
+  function filterCourses(subject) {
+    let filtered;
+    if (subject === 'all') {
+      filtered = courses;
+    } else {
+      filtered = courses.filter(course => course.subject === subject);
+    }
+    renderCourses(filtered);
+  }
+  
+  renderCourses(courses);

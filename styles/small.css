@@ -6,58 +6,61 @@
 
 body {
 	background-color: #F7E7CE;
-	height: 100%;
 	width: 100vw;
+	min-height: 100vh;
 	margin: 0;
 	display: flex;
 	flex-direction: column;
 	font-family: "Lato", sans-serif;
 	min-height: 100vh;
+	transition: margin-top 0.3s ease-in-out;
 }
 
 header {
     background-color: #800000;
     color: white;
-    padding: 5px;
+    padding: 10px;
 }
 .top {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 5px;
+	width: 100%;
 }
 
 .top img {
-	
-    margin-left: 10px;
+	width: 80px; 
+  	height: auto;
     box-shadow: 2px 2px 2px rgba(247, 231, 206, 0.5);
 }
 
 .top span {
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: bold;
     flex-grow: 1;
-    text-align: left;
 	margin-left: 10px;
-	text-shadow: 2px 2px 2px rgba(247, 231, 206, 0.5);
+	
 }
 
 h1 {
 	color: black;
 	font-size: 1.5rem;
-	margin-left: 0;
 	text-align: center;
 }
 
 h2 {
-	color: #800000;
-	font-size: 1rem;
-	text-align: center;
+	color:white;
+	background-color: #800000;
+	height: 4vw;
+	font-size: 3vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #menu {
-	font-size: 1.5rem;
-	border: 0;
+	font-size: 3rem;
+	border: none;
 	background: none;
 	color: #F7E7CE;
 	position: absolute;
@@ -80,24 +83,29 @@ h2 {
 	left: 0;
 	width: 100%;
 	background-color:black;
+	top: 130px; 
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
 }
 
 .navigation a {
 	display: block;
-	padding: 5px;
+	padding: 2px;
 	text-align: center;
 	color: white;
 	text-decoration: none;
+	font-size: 1rem;
 }
 
 .navigation a:hover {
 	background-color: #333;
 	color: #F7E7CE;
-	font-weight: 700;
 }
 
 .navigation.open {
 	display: flex; 
+	height: 90px;
 }
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
@@ -108,6 +116,100 @@ h2 {
 	content: "⚽";  /* just a wayfinding symbol for the user */
 }
 
+main {
+    transition: margin-top 0.3s ease-in-out;
+	flex: 1;
+}
+
+.top-section {
+	display: block;
+	justify-content:center;
+	gap: 3vw;
+	width: 100%;
+	max-width: 100%;
+	padding: 10px;
+}
+
+.top-section section {
+	width: 100%;
+	flex: 1;
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+	margin-bottom: 10px;
+}
+
+figure {
+	display: flex;
+	flex-direction: column; 
+	align-items: center; 
+	text-align: center; 
+	max-width: 100%; 
+}
+
+.images img {
+	width:min-content;
+	padding: 0.5vw;
+}
+
+.certificate-container {
+	width: 100%;
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+	text-align: center;
+  }
+  
+  .buttons {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+	margin-bottom: 10px;
+  }
+  
+  .buttons button {
+	padding: 8px 12px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+  }
+  .buttons button:hover {
+	background-color: #800000;
+  }
+  
+  .course-list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+  }
+  
+  .course-card {
+	padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .course-card.completed {
+	background-color: #0E5A5E; 
+	border-color: black;
+	color: white;
+  }
+  
+  .total-credits {
+	font-weight: bold;
+	font-size: 1.2rem;
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+  }
+
 footer {
     background-color: #800000; 
     color: white; 
@@ -115,5 +217,4 @@ footer {
     padding: 10px;
     width: 100vw;
     max-width: 100%;
-    margin: 0;
-  }
+}

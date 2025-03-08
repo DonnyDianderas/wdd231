@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Donny Donald Dianderas Hernández">
-    <meta name="description" content="This is my Home page">
+    <meta name="description" content="This is my Home page. Explore my web portfolio, where I share my progress in development and programming">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
@@ -28,8 +28,8 @@
                 <ul>
                     <li><a href="index.html" title="home" class="active">Home</a></li>
                     <li><a href="#">Chamber</a></li>
-                    <li><a href="">GitHub Profile</a></li>
-                    <li><a href="">LinkedIn</a></li>
+                    <li><a href="https://github.com/DonnyDianderas">GitHub Profile</a></li>
+                    <li><a href="https://www.linkedin.com/in/donnydianderas/?locale=en_US">LinkedIn</a></li>
                 </ul>
             </nav>
         </div>      
@@ -37,30 +37,37 @@
         
     <main>
         <h1>Home</h1>
-        <section>
-            <h2 class="title">Course Work</h2>
-            <ul id="course-list"></ul>
-        </section>
+        <div class="top-section">
+            <section>
+                <h2 class="title">Course Work</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
         
-        <section>
-            <h2>Lima, Perú</h2>
-            <figure class="images">
-                <img src="images/lima.webp" alt="enjoy the sunset" width="100">
-                <figcaption>Lima's Plaza de Armas</figcaption>
-            </figure>
-            
-        </section>
+            <section>
+                <h2>Lima, Perú</h2>
+                <figure class="images">
+                    <img src="images/lima.webp" alt="Panoramic photo of downtown Lima." width="100">
+                    <figcaption>Lima's Plaza de Armas</figcaption>
+                </figure>
+            </section>
+        </div>
+        
+        <div class="certificate-container">
             <h2>Web and Computer Programming Certificate</h2>
-            <div>
-                <button onclick="filterCourses('all')">All</button>
-                <button onclick="filterCourses('CSE')">CSE</button>
-                <button onclick="filterCourses('WDD')">WDD</button>
+            <div class="buttons">
+              <button onclick="filterCourses('all')">All</button>
+              <button onclick="filterCourses('CSE')">CSE</button>
+              <button onclick="filterCourses('WDD')">WDD</button>
             </div>
-            <div id="course-container"></div>
-  
-        <section>
-
-        </section>
+            
+            <div class="total-credits" id="totalCredits"></div>
+            
+            <div class="course-list" id="courseList"></div>
+          </div>
         
     </main>
     <footer>
@@ -68,7 +75,7 @@
             <p>&copy; <span id="currentyear"></span> Donny Dianderas Hernández, Perú</p>
             <p id="lastModified"></p>
         </div> 
-
     </footer>
+    
 </body>
 </html>
