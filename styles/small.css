@@ -4,11 +4,62 @@
 	box-sizing: border-box;
 }
 
+body {
+	background-color: #F7E7CE;
+	height: 100%;
+	width: 100vw;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	font-family: "Lato", sans-serif;
+	min-height: 100vh;
+}
+
+header {
+    background-color: #800000;
+    color: white;
+    padding: 5px;
+}
+.top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+}
+
+.top img {
+	
+    margin-left: 10px;
+    box-shadow: 2px 2px 2px rgba(247, 231, 206, 0.5);
+}
+
+.top span {
+    font-size: 15px;
+    font-weight: bold;
+    flex-grow: 1;
+    text-align: left;
+	margin-left: 10px;
+	text-shadow: 2px 2px 2px rgba(247, 231, 206, 0.5);
+}
+
+h1 {
+	color: black;
+	font-size: 1.5rem;
+	margin-left: 0;
+	text-align: center;
+}
+
+h2 {
+	color: #800000;
+	font-size: 1rem;
+	text-align: center;
+}
+
 #menu {
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
-	color: #000;
+	color: #F7E7CE;
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
@@ -23,40 +74,46 @@
 }
 
 .navigation {
-	display: flex;
+	display: none; 
 	flex-direction: column;
-	justify-content: space-around;
-	list-style: none;
-	background-color: #333;
-	color: #fff;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background-color:black;
 }
 
 .navigation a {
-	display: none;
-	padding: 1rem;
+	display: block;
+	padding: 5px;
 	text-align: center;
+	color: white;
 	text-decoration: none;
-	color: #fff;
 }
+
 .navigation a:hover {
-	background-color: #bbb;
-	color: #333;
+	background-color: #333;
+	color: #F7E7CE;
 	font-weight: 700;
 }
 
+.navigation.open {
+	display: flex; 
+}
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
 	display: block;
 }
 
 .active::before { 
-	content: "📍";  /* just a wayfinding symbol for the user */
+	content: "⚽";  /* just a wayfinding symbol for the user */
 }
 
-.stuff {
-	margin: 0.5rem;
-	border: 1px solid rgb(0  0  0 / 0.1);
-	background-color: #bed;
-	max-width: 580px;
-	height: 100vh;
-}
+footer {
+    background-color: #800000; 
+    color: white; 
+    text-align: center;
+    padding: 10px;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+  }
