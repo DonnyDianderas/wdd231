@@ -14,7 +14,7 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/course.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <title>Home page</title>
+    <title>Home page - Donny Dianderas</title>
 </head>
 <body>
     <header>
@@ -55,19 +55,20 @@
                 </figure>
             </section>
         </div>
-        
-        <div class="certificate-container">
-            <h2>Web and Computer Programming Certificate</h2>
-            <div class="buttons">
-              <button onclick="filterCourses('all')">All</button>
-              <button onclick="filterCourses('CSE')">CSE</button>
-              <button onclick="filterCourses('WDD')">WDD</button>
+        <section> 
+            <div class="certificate-container">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="buttons">
+                    <button onclick="filterCourses('all')">All</button>
+                    <button onclick="filterCourses('CSE')">CSE</button>
+                    <button onclick="filterCourses('WDD')">WDD</button>
+                </div>
+            
+                <div class="total-credits" id="totalCredits"></div>
+            
+                <div class="course-list" id="courseList"></div>
             </div>
-            
-            <div class="total-credits" id="totalCredits"></div>
-            
-            <div class="course-list" id="courseList"></div>
-          </div>
+        </section>
         
     </main>
     <footer>
