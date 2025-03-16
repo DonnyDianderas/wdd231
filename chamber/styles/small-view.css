@@ -1,0 +1,20 @@
+@media (max-width: 480px) {
+  
+    .list .member-card h3 {
+        
+        font-size: smaller;
+        margin: 0;
+    }
+    
+    .list .member-card p {
+        margin: 0 5px;
+        font-size: smaller;
+    }
+
+    .list .member-card .hide-on-small {
+        display: none;
+    }
+    
+    
+    
+}

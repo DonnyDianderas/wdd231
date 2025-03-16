@@ -1,0 +1,80 @@
+[
+    {
+      "name": "Rovident S.A.C",
+      "address": "Petit Thouars 2866, San Isidro, Lima, Peru",
+      "phone": "+51 967807569",
+      "website": "https://clinicasrovident.com/",
+      "image": "images/rovident.png",
+      "position": "President",
+      "membership": 3,
+      "industry": "Health",
+      "founded": 2003
+    },
+    {
+      "name": "Zamtsu Corporacion S.R.L",
+      "address": "Jr. Enrique Barron 1065, Lima, Peru",
+      "phone": "+51 941525454",
+      "website": "https://zamtsu.com/",
+      "image": "images/zamtsu.png",
+      "position": "Vice President",
+      "membership": 2,
+      "industry": "Importer",
+      "founded": 1991
+    },
+    {
+      "name": "GHMR Law Consult SAC",
+      "address": "Calle Boulevard N° 180 Of. 1103, Surco, Lima, Peru",
+      "phone": "+51 1 2995440",
+      "website": "https://lawconsult.pe/",
+      "image": "images/law.png",
+      "position": "Secretary",
+      "membership": 1,
+      "industry": "Legal consultancy",
+      "founded": 2012
+    },
+    {
+      "name": "Origen Cafe Perú S.A.C",
+      "address": "Av. Bolívar 1199, Lima, Peru",
+      "phone": "+51 1 2618280",
+      "website": "https://www.origentostadoresdecafe.com/",
+      "image": "images/origencafe.png",
+      "position": "Board Member",
+      "membership": 3,
+      "industry": "Food products",
+      "founded": 2022
+    },
+    {
+      "name": "JVG Energía Alternativa S.A.C",
+      "address": "Calle Las Camelias Mz. “K” Lote 24, Los Olivos, Lima, Peru",
+      "phone": "+51 997351929",
+      "website": "https://jvgenergy.pe/",
+      "image": "images/jvg.png",
+      "position": "Board Member",
+      "membership": 2,
+      "industry": "Importer",
+      "founded": 2018
+    },
+    {
+      "name": "Pop Comunicaciones S.A.C",
+      "address": "Av. Esteban Campodonico Nro. 253, La Victoria, Lima, Peru",
+      "phone": "+51 937682791",
+      "website": "https://popcomunicaciones.com/",
+      "image": "images/pop.png",
+      "position": "Board Member",
+      "membership": 3,
+      "industry": "Marketing",
+      "founded": 2015
+    },
+    {
+      "name": "Audax",
+      "address": "Pasaje Atlatinda 110, Lima, Peru",
+      "phone": "+51 993541443",
+      "website": "https://www.audax.com.pe/",
+      "image": "images/audax.png",
+      "position": "Associate",
+      "membership": 1,
+      "industry": "Manufacturing of engines",
+      "founded": 1961
+    }
+  ]
+  
