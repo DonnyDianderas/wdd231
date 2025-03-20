@@ -11,3 +11,5 @@ hamButton.addEventListener('click', () => {
         mainContent.style.marginTop = navigation.classList.contains('open') ? `${navHeight}px` : '0';
     }
 });
+
+

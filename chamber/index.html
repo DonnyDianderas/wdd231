@@ -21,8 +21,8 @@
     <link rel="stylesheet" href="styles/larger-view.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/members.js" defer></script>
-    <title>Directory Chamber | Donny Dianderas</title>
+    <script src="scripts/message.js" defer></script>
+    <title>Home page Chamber | Donny Dianderas</title>
     <link rel="icon" href="/favicon.ico">
 </head>
 <body>
@@ -34,20 +34,22 @@
         </div>
         <nav class="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="index.html"class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Guild of Small Businesses</h1>
-        <div class="menu">
-            <button id="grid">⏹️ Grid</button>
-            <button id="list">📄 List</button>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 799px)" srcset="images/ccl1.webp" >
+                <source media="(min-width: 800px)" srcset="images/ccl.webp" >
+                <img src="images/ccl.webp" alt="photo of Lima Chamber of Commerce" >
+            </picture>
+            <div class="hero-message" id="heroMessage">Connect with the largest network of entrepreneurs in Peru</div>
         </div>
-        <section id="directory" class="grid"></section>
     </main>
     <footer>
         <div class="footer-container">
