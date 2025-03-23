@@ -1,23 +1,24 @@
 // select HTML elements in the document
-const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const myTown = document.querySelector('#town');
+const currentTemp = document.querySelector('#temperature');
+const weatherIcon = document.querySelector('#graphic');
+const captionDesc = document.querySelector('#description');
 
 // create requied variables for the URL
-const lat = "49.76410468618068";
-const lon = "6.641904220640538";
+const lat = "-12.083666275359947";
+const lon = "-77.05169648082068";
 const appi_key = "29f50498de5930012963454a6d5e4469";
 
 // Construct a full path
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${appi_key}&units=imperial`;
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${appi_key}&units=metric`;
 
-async function apiFetch() {
+async function apiFetchCurrentWeather() {
     try {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
             console.log(data); //testing only
-            displayResults(data);
+            displayResultsCurrent(data);
         } else {
             throw Error(await response.text());
         }
@@ -26,8 +27,9 @@ async function apiFetch() {
     }
 }
 
-function displayResults(data) {
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`; 
+function displayResultsCurrent(data) {
+    myTown.innerHTML = data.name
+    currentTemp.innerHTML = `${data.main.temp}&deg;C`; 
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
@@ -35,4 +37,4 @@ function displayResults(data) {
     captionDesc.textContent = desc;
 }
 
-apiFetch();
+apiFetchCurrentWeather();

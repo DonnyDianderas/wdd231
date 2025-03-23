@@ -6,7 +6,7 @@
       "website": "https://clinicasrovident.com/",
       "image": "images/rovident.png",
       "position": "President",
-      "membership": 3,
+      "membership": "GOLD",
       "industry": "Health",
       "founded": 2003
     },
@@ -17,7 +17,7 @@
       "website": "https://zamtsu.com/",
       "image": "images/zamtsu.png",
       "position": "Vice President",
-      "membership": 2,
+      "membership": "SILVER",
       "industry": "Importer",
       "founded": 1991
     },
@@ -28,7 +28,7 @@
       "website": "https://lawconsult.pe/",
       "image": "images/law.png",
       "position": "Secretary",
-      "membership": 1,
+      "membership": "NON-PROFIT",
       "industry": "Legal consultancy",
       "founded": 2012
     },
@@ -39,7 +39,7 @@
       "website": "https://www.origentostadoresdecafe.com/",
       "image": "images/origencafe.png",
       "position": "Board Member",
-      "membership": 3,
+      "membership": "SILVER",
       "industry": "Food products",
       "founded": 2022
     },
@@ -50,7 +50,7 @@
       "website": "https://jvgenergy.pe/",
       "image": "images/jvg.png",
       "position": "Board Member",
-      "membership": 2,
+      "membership": "SILVER",
       "industry": "Importer",
       "founded": 2018
     },
@@ -61,7 +61,7 @@
       "website": "https://popcomunicaciones.com/",
       "image": "images/pop.png",
       "position": "Board Member",
-      "membership": 3,
+      "membership": "SILVER",
       "industry": "Marketing",
       "founded": 2015
     },
@@ -72,7 +72,7 @@
       "website": "https://www.audax.com.pe/",
       "image": "images/audax.png",
       "position": "Associate",
-      "membership": 1,
+      "membership": "GOLD",
       "industry": "Manufacturing of engines",
       "founded": 1961
     }

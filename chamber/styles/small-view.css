@@ -1,4 +1,11 @@
 @media (max-width: 480px) {
+
+    .event-image {
+        max-width: 100px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
   
     .list .member-card h3 {
         
@@ -14,7 +21,16 @@
     .list .member-card .hide-on-small {
         display: none;
     }
-    
-    
-    
+
+    .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .container section {
+        width: 100%; 
+    }
+
 }
+    
+    
