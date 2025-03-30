@@ -11,7 +11,7 @@
     <meta property="og:image" content="https://donnydianderas.github.io/wdd231/chamber/images/chamber.jpg"/>
     <meta property="og:image:width" content="600">
     <meta property="og:image:height" content="400">
-    <meta property="og:url" content="https://donnydianderas.github.io/wdd231/chamber/directory.html" />
+    <meta property="og:url" content="https://donnydianderas.github.io/wdd231/chamber/join.html" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="styles/larger-view.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/form.js" defer></script>
     <title>Join Chamber | Donny Dianderas</title>
     <link rel="icon" href="/favicon.ico">
 </head>
@@ -42,9 +42,119 @@
         </nav>
     </header>
     <main>
-        <h1>🚧 Page Under Construction 🚧</h1>
-        
+        <div class="main-container">
+            <section class="form-section">
+                <h1>Membership Application Form</h1>
+                <form action="thankyou.html" method="get">
+                    <div class="form-group">
+                        <label for="first_name">First Name:</label>
+                        <input type="text" id="first_name" name="first_name" required 
+                               title="Please enter your first name (letters only, min. 2 characters)" 
+                               autocomplete="given-name"
+                               pattern="[A-Za-záéíóúñÑ\s]{2,}"> 
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" id="last_name" name="last_name" required 
+                               title="Please enter your last name (letters only, min. 2 characters)"
+                               autocomplete="family-name"
+                               pattern="[A-Za-záéíóúñÑ\s]{2,}"> 
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="org_title">Organizational Title:</label>
+                        <input type="text" id="org_title" name="org_title" 
+                               autocomplete="organization-title" 
+                               title="Ej: Marketing Manager"
+                               pattern="[A-Za-záéíóúñÑ0-9\-\s]{5,}"> 
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" 
+                               autocomplete="email" 
+                               placeholder="example@mail.com" 
+                               required
+                               title="Please enter a valid email address">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" 
+                               autocomplete="tel" 
+                               pattern="[0-9]{9}" 
+                               placeholder="987654321" 
+                               required
+                               title="9-digit number (e.g., 987654321)">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="organization">Business/Organization:</label>
+                        <input type="text" id="organization" name="organization" 
+                               required 
+                               autocomplete="organization" 
+                               pattern="[A-Za-záéíóúñÑ0-9\-\s]{5,}"
+                               title="Organization name (min. 5 characters)">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="membership_level">Membership Level:</label>
+                        <select id="membership_level" name="membership_level" required>
+                            <option value="" disabled selected>Select options</option>
+                            <option value="np">NP Membership (Free)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="description">Business Description:</label>
+                        <textarea id="description" name="description"></textarea>
+                    </div>
+                
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    <input type="submit" value="Submit">
+                </form>
+                
+            </section>
+            
+            <section class="membership-section">
+                <h1>Membership Levels</h1>
+                <div class="membership-card">
+                    <h3>NP Membership</h3>
+                    <button class="learn-more" onclick="openModal('np')">Learn More</button>
+                </div>
+            
+                <div class="membership-card">
+                    <h3>Bronze Membership</h3>
+                    <button class="learn-more" onclick="openModal('bronze')">Learn More</button>
+                </div>
+            
+                <div class="membership-card">
+                    <h3>Silver Membership</h3>
+                    <button class="learn-more" onclick="openModal('silver')">Learn More</button>
+                </div>
+            
+                <div class="membership-card">
+                    <h3>Gold Membership</h3>
+                    <button class="learn-more" onclick="openModal('gold')">Learn More</button>
+                </div>
+            </section>
+            
+            <!-- Modal -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <p id="modal-text"></p>
+                </div>
+            </div>
+            
+        </div>
     </main>
+    
+    
     <footer>
         <div class="footer-container">
             <div class="footer-info">
