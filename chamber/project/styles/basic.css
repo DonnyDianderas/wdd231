@@ -1,0 +1,28 @@
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #001524; 
+    color: black; 
+    margin: 20px;
+    padding: 20px;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #ff7d00; 
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #78290F; 
+}
+
+.section {
+    background-color: #ffecd1;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+.highlight {
+    font-family: 'Roboto Mono', monospace;
+    color: #001524; 
+    font-weight: bold;
+}
