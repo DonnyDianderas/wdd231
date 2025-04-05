@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Donny Donald Dianderas Hernández">
-    <meta name="description" content="Connect with small and medium-sized businesses in Lima and explore new opportunities.">
-    <meta property="og:title" content="Chamber Directory Page" />
-    <meta property="og:description" content="Connect with small and medium-sized businesses in Lima.">
+    <meta name="description" content="Meet Lima and explore new places and opportunities.">
+    <meta property="og:title" content="Chamber of Commerce of Lima: Discover this city" />
+    <meta property="og:description" content="Meet Lima and explore new places and opportunities.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://donnydianderas.github.io/wdd231/chamber/images/chamber.jpg"/>
     <meta property="og:image:width" content="600">
     <meta property="og:image:height" content="400">
-    <meta property="og:url" content="https://donnydianderas.github.io/wdd231/chamber/directory.html" />
+    <meta property="og:url" content="https://donnydianderas.github.io/wdd231/chamber/discover.html" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/small-view.css">
+    <link rel="stylesheet" href="styles/medium-view.css">
     <link rel="stylesheet" href="styles/larger-view.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/members.js" defer></script>
-    <title>Directory Chamber | Donny Dianderas</title>
+    <script src="scripts/discover-message.js" defer></script>
+    <script src="scripts/places.js" defer></script>
+    <title>Discover Lima | Donny Dianderas</title>
     <link rel="icon" href="/favicon.ico">
 </head>
 <body>
@@ -35,19 +37,33 @@
         <nav class="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="directory.html" >Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Guild of Small Businesses</h1>
-        <div class="menu">
-            <button id="grid">⏹️ Grid</button>
-            <button id="list">📄 List</button>
+
+        <!-- Structure to use localStorage via overlay-->
+        <div id="welcome-overlay" class="welcome-overlay">
+            <div class="welcome-message">
+                <p id="welcome-text"></p>
+                <button id="close-overlay">Close</button>
+            </div>
         </div>
-        <section id="directory" class="grid"></section>
+
+        <div class="card-grid"></div>
+
+        <!-- Modal Structure -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+                <a id="modal-link" href="#" target="_blank">Visit website</a>  
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer-container">

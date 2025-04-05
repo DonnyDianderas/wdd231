@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (max-width: 640px) {
 
     .event-image {
         max-width: 100px;
@@ -77,6 +77,20 @@
         max-width: 300px;
     }
 
+    /*Discover page*/
+
+    .card-grid {
+        grid-template-areas:
+          "card1"
+          "card2"
+          "card3"
+          "card4"
+          "card5"
+          "card6"
+          "card7"
+          "card8";
+        grid-template-columns: 1fr;
+      }
 }
     
     
