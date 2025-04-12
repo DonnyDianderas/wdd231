@@ -32,7 +32,7 @@ function showServices(services) {
 
     container.innerHTML = services.map(service => `
         <div class="service-card" data-category="${service.category}">
-            <img src="${service.image}" alt="${service.title}" loading="lazy" onerror="this.src='images/default.webp';">
+            <img src="${service.image}" alt="${service.title}" loading="lazy" decoding="async" style="opacity:0; transition: opacity 2.5s ease;" onload="this.style.opacity=1;" onerror="this.src='images/default.webp';">
             <div class="service-content">
                 <h3>${service.title}</h3>
                 ${service.price ? `<p class="price">${service.price}</p>` : ""}
