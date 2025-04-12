@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Donny Dianderas Hernández">
+  <meta name="description" content="NexusAI Property Services - AI-powered solutions for modern property management">
+  <title>NexusAI Properties | Smart Services</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="icon" href="images/building.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/logo.css">
+  <link rel="icon" href="images/building.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Merriweather:wght@300;400&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+  <script src="scripts/menu.js" defer></script>
+  <script src="scripts/services.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="building">
+        <div class="windows">
+          <div class="window"></div>
+          <div class="window"></div>
+          <div class="window"></div>
+          <div class="window"></div>
+          <div class="window"></div>
+          <div class="window"></div>
+        </div>
+      </div>
+      <div class="text">
+        <h1>NexusAI</h1>
+        <p>Smart Property Management</p>
+      </div>
+    </div>
+
+    <div class="contact-info">
+      <p class="whatsapp">📱 WhatsApp: +51 999 888 777</p>
+      <p class="email">📧 Email: nexusAI@mail.com</p>
+    </div>
+
+    <div class="nav-container">
+      <button type="button" id="menu" aria-label="Toggle menu">
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav class="navigation">
+        <a href="index.html" >Home</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="contact-us.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Our AI-Powered Services</h1>
+      <p>Transform your property management with cutting-edge technology</p>
+    </section>
+    
+    <div class="filter-controls">
+      <button class="filter-btn active" data-filter="all">All Services</button>
+      <button class="filter-btn" data-filter="security">Security</button>
+      <button class="filter-btn" data-filter="management">Management</button>
+      <button class="filter-btn" data-filter="automation">Automation</button>
+    </div>
+    
+    <div class="services-grid" id="servicesContainer">
+      
+    </div>
+    
+    <div class="modal" id="serviceModal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2 id="modalTitle"></h2>
+          <p id="modalDescription"></p>
+          <ul id="modalFeatures"></ul>
+          <button class="contact-btn">Get Info About This Service</button>
+        </div>
+      </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 NexusAI Propiedades</p>
+  </footer>
+</body>
+</html>

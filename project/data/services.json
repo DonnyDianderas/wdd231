@@ -1,0 +1,197 @@
+[
+    {
+      "id": 1,
+      "title": "AI Security Monitoring",
+      "category": "security",
+      "description": "24/7 intelligent surveillance that learns your property's normal patterns and alerts you to anomalies.",
+      "features": [
+        "Real-time threat detection",
+        "Facial recognition for authorized access",
+        "Automated incident reports",
+        "Integration with existing cameras"
+      ],
+      "image": "https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 2,
+      "title": "Smart Maintenance Alerts",
+      "category": "automation",
+      "description": "Predictive maintenance system that identifies issues before they become problems.",
+      "features": [
+        "Equipment health monitoring",
+        "Vendor dispatch automation",
+        "Preventative maintenance scheduling",
+        "Cost savings analysis"
+      ],
+      "image": "images/2SmartMaintenanceAlerts.webp"
+    },
+    {
+      "id": 3,
+      "title": "Automated Tenant Screening",
+      "category": "management",
+      "description": "AI-powered background checks and rental history analysis for faster, safer tenant placement.",
+      "features": [
+        "Credit score analysis",
+        "Rental history verification",
+        "Criminal background check",
+        "Custom risk scoring"
+      ],
+      "image": "images/3AutomatedTenantScreening.webp"
+    },
+    {
+      "id": 4,
+      "title": "Intelligent Energy Management",
+      "category": "automation",
+      "description": "Reduce utility costs with AI that optimizes energy usage across your properties.",
+      "features": [
+        "Real-time consumption monitoring",
+        "Automated temperature control",
+        "Peak demand prediction",
+        "Sustainability reporting"
+      ],
+      "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 5,
+      "title": "Virtual Property Tours",
+      "category": "management",
+      "description": "AI-generated 3D tours with interactive features for prospective tenants.",
+      "features": [
+        "24/7 self-guided tours",
+        "Lead qualification analytics",
+        "Integration with listing sites",
+        "Multilingual support"
+      ],
+      "image": "images/5VirtualPropertyTours.webp"
+    },
+    {
+      "id": 6,
+      "title": "Smart Access Control",
+      "category": "security",
+      "description": "Keyless entry system with customizable permissions and usage tracking.",
+      "features": [
+        "Mobile app access",
+        "Temporary access codes",
+        "Usage analytics dashboard",
+        "Emergency lockdown capability"
+      ],
+      "image": "https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 7,
+      "title": "AI-Powered Lease Analysis",
+      "category": "management",
+      "description": "Automated contract review with risk assessment and clause recommendations.",
+      "features": [
+        "Standard clause library",
+        "Custom term flagging",
+        "Renewal prediction",
+        "Compliance monitoring"
+      ],
+      "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 8,
+      "title": "Predictive Occupancy Analytics",
+      "category": "automation",
+      "description": "Forecast vacancy rates and optimize pricing with machine learning models.",
+      "features": [
+        "Neighborhood trend analysis",
+        "Dynamic pricing recommendations",
+        "Renewal probability scoring",
+        "Marketing effectiveness tracking"
+      ],
+      "image": "images/8PredictiveOccupancyAnalytics.webp"
+    },
+    {
+      "id": 9,
+      "title": "Automated Rent Collection",
+      "category": "management",
+      "description": "Secure, frictionless payment processing with automatic reminders and reporting.",
+      "features": [
+        "Multiple payment methods",
+        "Late fee automation",
+        "Custom payment plans",
+        "Real-time cash flow reporting"
+      ],
+      "image": "images/9AutomatedRentCollection.webp"
+    },
+    {
+      "id": 10,
+      "title": "AI Concierge Service",
+      "category": "automation",
+      "description": "24/7 virtual assistant for tenant inquiries and service requests.",
+      "features": [
+        "Natural language processing",
+        "Maintenance ticket routing",
+        "Community information hub",
+        "Multilingual support"
+      ],
+      "image": "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 11,
+      "title": "Fire Safety Monitoring",
+      "category": "security",
+      "description": "Early detection system that analyzes multiple risk factors beyond standard alarms.",
+      "features": [
+        "Multi-sensor integration",
+        "Emergency response coordination",
+        "Equipment self-testing",
+        "Insurance compliance reporting"
+      ],
+      "image": "images/11Fire Safety Monitoring.webp"
+    },
+    {
+      "id": 12,
+      "title": "Water Leak Detection",
+      "category": "automation",
+      "description": "Smart sensors that identify leaks and automatically shut off water supply.",
+      "features": [
+        "Whole-property coverage",
+        "Usage anomaly detection",
+        "Automatic valve control",
+        "Damage prevention alerts"
+      ],
+      "image": "images/12WaterLeakDetection.webp"
+    },
+    {
+      "id": 13,
+      "title": "Community Engagement Platform",
+      "category": "management",
+      "description": "Digital hub for resident communication and event coordination.",
+      "features": [
+        "Announcement center",
+        "Community calendar",
+        "Polling and feedback tools",
+        "Document sharing"
+      ],
+      "image": "images/13CommunityEngagementPlatform.webp"
+    },
+    {
+      "id": 14,
+      "title": "Parking Management",
+      "category": "automation",
+      "description": "Optimize parking space allocation and prevent unauthorized use.",
+      "features": [
+        "License plate recognition",
+        "Resident vs visitor tracking",
+        "Space availability mapping",
+        "Violation documentation"
+      ],
+      "image": "images/14Parking Management.webp"
+    },
+    {
+      "id": 15,
+      "title": "Compliance Monitoring",
+      "category": "management",
+      "description": "Automated tracking of regulatory requirements and deadlines.",
+      "features": [
+        "Custom requirement library",
+        "Deadline alerts",
+        "Document generation",
+        "Audit trail"
+      ],
+      "image": "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+    }
+  ]

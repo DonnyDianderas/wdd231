@@ -6,7 +6,7 @@
   <meta name="author" content="Donny Dianderas Hernández">
   <meta name="description" content="NexusAI Propiedades is a property management company that uses artificial intelligence to improve security, communication, and condominium management in Peru. Smart connectivity between residents and systems.">
 
-  <title>NexusAI Properties | Smart Real Estate Technology</title>
+  <title>NexusAI Properties | Form</title>
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
@@ -47,50 +47,63 @@
         <span class="sr-only">Menu</span>
       </button>
       <nav class="navigation">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="services.html">Services</a>
-        <a href="contact-us.html">Contact Us</a>
+        <a href="contact-us.html" class="active">Contact Us</a>
       </nav>
     </div>
   </header>
-
-  <main class="main-grid">
-    <section class="hero">
-      <img src="images/building.webp" alt="Building" class="hero-image">
-      <div class="hero-text">
-        <h1>Smart Management for Modern Condominiums</h1>
-        <p>Power Your Condominium's Future with NexusAI</p>
-        <a href="services.html" class="cta-button">See How It Works</a>
-
+  <main>
+    <section class="form-hero">
+      <h1>Upgrade to Smart Property Management</h1>
+      <p>Are you prepared to <strong>Live</strong> in the <strong>Now</strong>?</p>
+    </section>
+    
+    <div class="form-container">
+      <div class="form-image">
+        <img src="images/contactNexusAI.webp" alt="Modern property with smart technology">
       </div>
-    </section>
+      
+      <div class="membership-form">
+        <h2>Start Your Application</h2>
+        <p>Complete this form and our AI concierge will contact you within <strong>24 hours</strong></p>
+        
+        <form action="thankyou.html" method="get">
+          <div class="form-group">
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" required 
+                   placeholder="Your name">
+          </div>
+          
+          <div class="form-group">
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" required 
+                   placeholder="Your Lastname">
+          </div>
 
-    <section class="about">
-      <h2>What is NexusAI Properties?</h2>
-      <p>We’re a Peruvian proptech pioneer leveraging artificial intelligence to revolutionize property management across residential and commercial real estate. Our AI-driven platform automates and optimizes every facet of property operations from 24/7 smart security monitoring and predictive maintenance to dynamic pricing and frictionless tenant bookings.</p>
-      <h2>Why It Matters?</h2>
-      <p>In Peru’s fast-growing real estate market, traditional management is time-consuming and error-prone. NexusAI replaces guesswork with data-powered precision, saving owners up to 40% in operational costs while enhancing tenant satisfaction through instant responses and automated workflows.</p>
-    </section>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required
+                   placeholder="user@mail.com">
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required
+                   placeholder="987654321" 
+                   pattern="[0-9]{9}">
+          </div>
 
-    <section class="services">
-      <h2>Smart Property Tools</h2>
-      <div class="cards">
-        <div class="card">🔒 AI Security</div>
-        <div class="card">📅 Automated Bookings</div>
-        <div class="card">🤖 Virtual Support</div>
+          <button type="submit" class="submit-btn">
+            Get Smart Management →
+          </button>
+    
+        </form>
       </div>
-    </section>
-
-    <section class="benefits">
-      <h2>Measurable Advantages</h2>
-      <p>Residents and managers enjoy faster, secure processes with zero human error.</p>
-    </section>
+    </div>
   </main>
-
   <footer>
     <p>&copy; 2025 NexusAI Propiedades</p>
   </footer>
 </body>
 </html>
-
-
